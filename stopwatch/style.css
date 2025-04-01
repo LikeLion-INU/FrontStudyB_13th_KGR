@@ -1,0 +1,62 @@
+*{box-sizing: border-box; }
+html, body{margin: 0; background-color:black;}
+
+.container{
+    width: 60%; min-width: 320px; max-width:640px; 
+    margin: 10px auto; padding: 5px 0 15px;
+    text-align: center; border: 1px solid white;
+    border-radius: 16px;
+}
+
+h1{color:white;}
+
+h1 > span{
+    display: inline-block;
+    width: 70px;
+    font-weight: 5;
+    font-size: 45px;
+}
+/*기본버튼*/
+button{
+    color:white; background-color:dimgray;
+    font-size: 10px; padding: 6px;
+    width: 55px; height: 55px; 
+    border: none; border-radius:50px;
+    cursor: pointer;
+    background: radial-gradient(
+        circle,
+        rgb(76, 75, 75) 0%,
+        rgb(76, 75, 75) 60%,
+        black 61%,
+        black 65%,
+        rgb(76, 75, 75) 66%
+    );
+    position: relative;
+    overflow: hidden;
+}
+/*start상태*/
+button.start {
+    background: radial-gradient(
+        circle,
+        rgb(0, 70, 0) 0%,
+        rgb(0, 70, 0) 60%,
+        black 61%,
+        black 65%,
+        rgb(0, 70, 0) 66%
+    ) !important;
+    color: lightgreen;
+  }
+  
+  /* Stop 상태*/
+  button.stop {
+    background: radial-gradient(
+        circle,
+        rgb(81, 6, 6) 0%,
+        rgb(81, 6, 6) 60%,
+        black 61%,
+        black 65%,
+        rgb(81, 6, 6) 66%
+    ) !important;
+    color: lightcoral;
+  }
+  
